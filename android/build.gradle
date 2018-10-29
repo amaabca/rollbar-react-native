@@ -1,20 +1,19 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.1"
+    compileSdkVersion 27
 
     defaultConfig {
         minSdkVersion 19
-        targetSdkVersion 23
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
 }
 
 dependencies {
-    compile 'com.rollbar:rollbar-api:1.2.0'
-    compile 'com.rollbar:rollbar-java:1.2.0'
-    compile 'com.rollbar:rollbar-android:1.2.0@aar'
-    compile 'com.facebook.react:react-native:+'
+    implementation 'com.rollbar:rollbar-api:1.2.0'
+    implementation 'com.rollbar:rollbar-java:1.2.0'
+    implementation 'com.rollbar:rollbar-android:1.2.0@aar'
+    implementation 'com.facebook.react:react-native:+'
 }
